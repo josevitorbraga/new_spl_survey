@@ -1,25 +1,28 @@
 import React from 'react';
 
-import {Container,Options} from './styles'
+import { Container, Options, Separator } from './styles';
 
-const QuestionaryBox = ({image,children}) => {
-  return(
+const QuestionaryBox = ({ typo, image, children }) => {
+  return (
     <>
-      
       <Container>
-        <div className="image">
-          <img src={image} alt="current" />
-        </div>
-        <Options>
-          <div>
-          {children}
-
+        {image ? (
+          <div className="image">
+            <img src={image} alt="current" />
           </div>
+        ) : (
+          <></>
+        )}
+        <Options>
+          {typo === 'breadcrumb' ? (
+            <Separator theme={typo}>{children}</Separator>
+          ) : (
+            <div>{children}</div>
+          )}
         </Options>
       </Container>
-
     </>
-  )
-}
+  );
+};
 
 export default QuestionaryBox;

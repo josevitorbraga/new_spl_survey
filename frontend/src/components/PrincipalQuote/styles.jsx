@@ -4,39 +4,38 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FF6E6D;
+  background-color: #ff6e6d;
   border-radius: 8px 8px 8px 0;
 `;
 
 export const Content = styled.div`
-    padding: 1em 3em 3em 3em;
-    p{
-      font-size: 3em;
-      font-weight: 700;
-    };
-    h4{
-      color: #FFF;
-    } 
+  padding: 1em 3em 3em 3em;
+  p {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  h4 {
+    color: #fff;
+  }
 `;
 
 export const Bottom = styled.div`
   display: flex;
   height: 5em;
-  .inicio{
+  .inicio {
     display: flex;
     width: 5em;
-    background-color: #FF6E6D;
-    .circulo{
+    background-color: #ff6e6d;
+    .circulo {
       width: 5em;
       height: 100%;
       border-radius: 50% 0 0 0;
-      background-color: #F1F0F0;
+      background-color: #f1f0f0;
     }
-  };
-  .resto{
+  }
+  .resto {
     flex: 1;
-    display:flex;
-    background-color: #F1F0F0;
-
+    display: flex;
+    background-color: #f1f0f0;
   }
 `;

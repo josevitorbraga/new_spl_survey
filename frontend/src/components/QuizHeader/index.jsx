@@ -5,7 +5,7 @@ import {BsArrowLeft} from 'react-icons/bs'
 import {Container, CurrentPageNumberContainer,PageCounter,Back} from './styles'
 
 const QuizHeader = ({page}) => {
-  const pages = [1,2,3,4,5]
+  const pages = [1,2,3,4,5,6,7]
   return(
     <Container>
       <Back>
