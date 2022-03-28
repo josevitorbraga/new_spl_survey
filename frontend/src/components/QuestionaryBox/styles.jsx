@@ -17,10 +17,11 @@ export const Container = styled.div`
 `;
 
 export const Options = styled.div`
-  height: 15em;
+  //height: 20em;
+  //width: ${props => (props.theme === 'breadcrumb' ? 'inherit' : '30em')};
   background-color: #fff;
   box-shadow: 4px 4px 4px #c8c8c8;
-  padding: 2.5em;
+  padding: 4em 1.8em;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -34,16 +35,22 @@ export const Options = styled.div`
   }
 
   .radio-container {
-    display: block;
+    height: 70px;
+    align-items: center;
+    display: flex;
     position: relative;
     padding-left: 70px;
-    margin-bottom: 24px;
+    margin: 12px 0;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+
+  .custom-height {
+    height: 9em;
   }
 
   /* Hide the browser's default radio button */

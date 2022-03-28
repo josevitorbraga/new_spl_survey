@@ -8,7 +8,7 @@ import QuestionaryGrid from '../../components/QuestionaryGrid';
 const Page7 = () => {
   return (
     <Container>
-      <QuizHeader page={6} />
+      <QuizHeader page={7} />
       <Content>
         <PrincipalQuote>
           De 0 a 5, sendo a 5 a nota de maior valor, qual nota você atribui para

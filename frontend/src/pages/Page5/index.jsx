@@ -16,60 +16,48 @@ const Page5 = () => {
         </PrincipalQuote>
         <QuestionaryBox typo="breadcrumb">
           <div className="option">
-            <label className="radio-container" htmlFor="lojas">
-              <input type="radio" name="page4" id="lojas" value="lojas" />
+            <label className="radio-container custom-height" htmlFor="tv">
+              <input type="radio" name="page4" id="tv" value="tv" />
               <span className="checkmark"></span>
-              Lojas
+              TV
             </label>
           </div>
 
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="eventos">
-              <input type="radio" name="page4" id="eventos" value="eventos" />
+            <label className="radio-container custom-height" htmlFor="radio">
+              <input type="radio" name="page4" id="radio" value="radio" />
               <span className="checkmark"></span>
-              Eventos
+              Rádio
             </label>
           </div>
 
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="cinema">
-              <input type="radio" name="page4" id="cinema" value="cinema" />
-              <span className="checkmark"></span>
-              Cinema
-            </label>
-          </div>
-
-          <div className="dot"></div>
-
-          <div className="option">
-            <label className="radio-container" htmlFor="alimentacao">
+            <label
+              className="radio-container custom-height"
+              htmlFor="internet-rede-social"
+            >
               <input
                 type="radio"
                 name="page4"
-                id="alimentacao"
-                value="alimentacao"
+                id="internet-rede-social"
+                value="internet-rede-social"
               />
               <span className="checkmark"></span>
-              Alimentação
+              Internet/Redes sociais
             </label>
           </div>
 
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="espacos-infantis">
-              <input
-                type="radio"
-                name="page4"
-                id="espacos-infantis"
-                value="espacos-infantis"
-              />
+            <label className="radio-container custom-height" htmlFor="jornal">
+              <input type="radio" name="page4" id="jornal" value="jornal" />
               <span className="checkmark"></span>
-              Espaços infantis
+              Jornal
             </label>
           </div>
         </QuestionaryBox>

@@ -1,11 +1,13 @@
 import React from 'react';
 import QuizHeader from '../../components/QuizHeader';
 import PrincipalQuote from '../../components/PrincipalQuote';
+import { usePesquisa } from '../../context/Context';
 
 import { Container, Content } from './styles';
 import QuestionaryBox from '../../components/QuestionaryBox';
 
 const Page4 = () => {
+  const { setPerguntaSorteio } = usePesquisa();
   return (
     <Container>
       <QuizHeader page={4} />
@@ -15,10 +17,16 @@ const Page4 = () => {
           carro okm do que participar de um compre e ganhe, juntando nota fiscal
           para trocar por um presente menor.”
         </PrincipalQuote>
-        <QuestionaryBox typo="breadcrumb">
+        <QuestionaryBox className="breadcrumb" typo="breadcrumb">
           <div className="option">
-            <label className="radio-container" htmlFor="lojas">
-              <input type="radio" name="page4" id="lojas" value="lojas" />
+            <label className="radio-container custom-height" htmlFor="lojas">
+              <input
+                onClick={e => setPerguntaSorteio(e.target.value)}
+                type="radio"
+                name="page4"
+                id="lojas"
+                value="lojas"
+              />
               <span className="checkmark"></span>
               Lojas
             </label>
@@ -27,8 +35,14 @@ const Page4 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="eventos">
-              <input type="radio" name="page4" id="eventos" value="eventos" />
+            <label className="radio-container custom-height" htmlFor="eventos">
+              <input
+                onClick={e => setPerguntaSorteio(e.target.value)}
+                type="radio"
+                name="page4"
+                id="eventos"
+                value="eventos"
+              />
               <span className="checkmark"></span>
               Eventos
             </label>
@@ -37,8 +51,14 @@ const Page4 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="cinema">
-              <input type="radio" name="page4" id="cinema" value="cinema" />
+            <label className="radio-container custom-height" htmlFor="cinema">
+              <input
+                onClick={e => setPerguntaSorteio(e.target.value)}
+                type="radio"
+                name="page4"
+                id="cinema"
+                value="cinema"
+              />
               <span className="checkmark"></span>
               Cinema
             </label>
@@ -47,8 +67,12 @@ const Page4 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="alimentacao">
+            <label
+              className="radio-container custom-height"
+              htmlFor="alimentacao"
+            >
               <input
+                onClick={e => setPerguntaSorteio(e.target.value)}
                 type="radio"
                 name="page4"
                 id="alimentacao"
@@ -62,8 +86,12 @@ const Page4 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="espacos-infantis">
+            <label
+              className="radio-container custom-height"
+              htmlFor="espacos-infantis"
+            >
               <input
+                onClick={e => setPerguntaSorteio(e.target.value)}
                 type="radio"
                 name="page4"
                 id="espacos-infantis"

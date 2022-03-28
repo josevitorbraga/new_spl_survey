@@ -20,7 +20,10 @@ const Page6 = () => {
         </div>
         <QuestionaryBox typo="breadcrumb">
           <div className="option">
-            <label className="radio-container" htmlFor="concordo-totalmente">
+            <label
+              className="radio-container custom-height"
+              htmlFor="concordo-totalmente"
+            >
               <input
                 type="radio"
                 name="page6"
@@ -35,7 +38,7 @@ const Page6 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="concordo">
+            <label className="radio-container custom-height" htmlFor="concordo">
               <input type="radio" name="page6" id="concordo" value="concordo" />
               <span className="checkmark"></span>
               <p>Concordo</p>
@@ -45,7 +48,10 @@ const Page6 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="nao-concordo">
+            <label
+              className="radio-container custom-height"
+              htmlFor="nao-concordo"
+            >
               <input
                 type="radio"
                 name="page6"
@@ -60,7 +66,7 @@ const Page6 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="discordo">
+            <label className="radio-container custom-height" htmlFor="discordo">
               <input type="radio" name="page6" id="discordo" value="discordo" />
               <span className="checkmark"></span>
               <p>Discordo</p>
@@ -70,7 +76,10 @@ const Page6 = () => {
           <div className="dot"></div>
 
           <div className="option">
-            <label className="radio-container" htmlFor="discordo-totalmente">
+            <label
+              className="radio-container custom-height"
+              htmlFor="discordo-totalmente"
+            >
               <input
                 type="radio"
                 name="page6"
